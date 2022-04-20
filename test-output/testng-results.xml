@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13719" started-at="2022-04-20T17:24:30Z" finished-at="2022-04-20T17:24:44Z">
+  <suite name="Suite" duration-ms="35849" started-at="2022-04-20T17:35:43Z" finished-at="2022-04-20T17:36:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13719" started-at="2022-04-20T17:24:30Z" finished-at="2022-04-20T17:24:44Z">
+    <test name="Firefox" duration-ms="19992" started-at="2022-04-20T17:35:43Z" finished-at="2022-04-20T17:36:03Z">
       <class name="oneNRB.LogInTest">
-        <test-method status="PASS" signature="testDriver()[pri:0, instance:oneNRB.LogInTest@2f686d1f]" name="testDriver" is-config="true" duration-ms="13146" started-at="2022-04-20T12:24:30Z" finished-at="2022-04-20T12:24:43Z">
+        <test-method status="PASS" signature="testDriver(java.lang.String)[pri:0, instance:oneNRB.LogInTest@1ce92674]" name="testDriver" is-config="true" duration-ms="17664" started-at="2022-04-20T12:35:43Z" finished-at="2022-04-20T12:36:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDriver -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:oneNRB.LogInTest@2f686d1f]" name="test1" duration-ms="84" started-at="2022-04-20T12:24:43Z" finished-at="2022-04-20T12:24:43Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:oneNRB.LogInTest@1ce92674]" name="test1" duration-ms="46" started-at="2022-04-20T12:36:01Z" finished-at="2022-04-20T12:36:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:oneNRB.LogInTest@2f686d1f]" name="closeBrowser" is-config="true" duration-ms="455" started-at="2022-04-20T12:24:44Z" finished-at="2022-04-20T12:24:44Z">
+        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:oneNRB.LogInTest@1ce92674]" name="closeBrowser" is-config="true" duration-ms="2168" started-at="2022-04-20T12:36:01Z" finished-at="2022-04-20T12:36:03Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'Syeds-Air.attlocal.net', ip: '2600:1700:9274:2280:0:0:0:2c', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [739651b0-4573-48ec-8012-d0d5d77d0475, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:51044, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 18411, moz:profile: /var/folders/t7/clw6h36900s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:51044/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 739651b0-4573-48ec-8012-d0d5d77d0475]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'Syeds-Air.attlocal.net', ip: '2600:1700:9274:2280:0:0:0:2c', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [739651b0-4573-48ec-8012-d0d5d77d0475, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 99.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220411174855, moz:debuggerAddress: localhost:51044, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 18411, moz:profile: /var/folders/t7/clw6h36900s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.6.0, proxy: Proxy(), se:cdp: ws://localhost:51044/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 739651b0-4573-48ec-8012-d0d5d77d0475
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- oneNRB.LogInTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Firefox -->
+    <test name="Chrome" duration-ms="15785" started-at="2022-04-20T17:36:03Z" finished-at="2022-04-20T17:36:19Z">
+      <class name="oneNRB.LogInTest">
+        <test-method status="PASS" signature="testDriver(java.lang.String)[pri:0, instance:oneNRB.LogInTest@5025a98f]" name="testDriver" is-config="true" duration-ms="15336" started-at="2022-04-20T12:36:03Z" finished-at="2022-04-20T12:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDriver -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:oneNRB.LogInTest@5025a98f]" name="test1" duration-ms="21" started-at="2022-04-20T12:36:18Z" finished-at="2022-04-20T12:36:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:oneNRB.LogInTest@5025a98f]" name="closeBrowser" is-config="true" duration-ms="420" started-at="2022-04-20T12:36:18Z" finished-at="2022-04-20T12:36:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- oneNRB.LogInTest -->
+    </test> <!-- Chrome -->
+  </suite> <!-- Suite -->
 </testng-results>
